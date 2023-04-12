@@ -17,6 +17,7 @@ class Login extends StatelessWidget {
               
               MyTextField(),
               const SizedBox(height: 33,),
+              MyTextField(),
 
 
             ],
