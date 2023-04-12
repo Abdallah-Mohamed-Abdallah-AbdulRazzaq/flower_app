@@ -22,7 +22,7 @@ class Login extends StatelessWidget {
                   filled: true,
                   contentPadding: const EdgeInsets.all(8),
                   )
-              )
+              ),
             ],
               
           ),
