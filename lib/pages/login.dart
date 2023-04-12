@@ -7,7 +7,10 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        
+        children: [
+          Text('data'),
+        ],
+
       ),
     );
   }
