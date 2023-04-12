@@ -15,7 +15,8 @@ class Login extends StatelessWidget {
               obscureText: false,
               decoration: InputDecoration(
                 hintText: "Enter Your Email : ",
-                
+                enabledBorder: OutlineInputBorder(borderSide: Divider.createBorderSide(context),),
+
                 
                 
 
