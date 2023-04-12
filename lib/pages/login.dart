@@ -6,11 +6,13 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text('data'),
-        ],
-
+      body: Center(
+        child: Column(
+          children: [
+            Text('data'),
+          ],
+      
+        ),
       ),
     );
   }
