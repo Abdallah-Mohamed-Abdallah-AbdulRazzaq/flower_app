@@ -46,7 +46,7 @@ class Register extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('Do not have an account?' , style: TextStyle(fontSize: 18),),
-                      TextButton(onPressed: (){}, child: Text('sing up' , style: TextStyle(color: Colors.black , fontSize: 18))),
+                      TextButton(onPressed: (){}, child: Text('sing in' , style: TextStyle(color: Colors.black , fontSize: 18))),
                     ],
                   )
                 
