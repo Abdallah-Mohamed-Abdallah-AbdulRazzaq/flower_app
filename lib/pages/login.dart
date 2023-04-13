@@ -34,7 +34,9 @@ class Login extends StatelessWidget {
               ),
 
               Row(
-                children: [],
+                children: [
+                  Text('Do not have an account' , style: TextStyle(fontSize: 18),),
+                ],
               )
 
 
