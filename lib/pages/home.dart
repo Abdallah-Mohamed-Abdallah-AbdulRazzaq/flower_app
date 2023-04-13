@@ -14,13 +14,20 @@ class Home extends StatelessWidget {
         mainAxisSpacing: 33),
         itemCount: 4,itemBuilder: (BuildContext context, int index) {
           return GridTile( 
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(55),
-              child: Image.asset("assets/img/1.jpg"),
-            ),
+            child: Stack(children:[
+             Positioned(
+              
 
-          );
-          }),
+
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(55),
+                child: Image.asset("assets/img/1.jpg"),
+              ),
+            ),
+          ]),
+
+        );
+        }),
 
       
 
