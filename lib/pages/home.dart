@@ -37,10 +37,12 @@ class Home extends StatelessWidget {
             ],
           ),
 
-        Text("data")    
-                 
-                  ],
-      )),
+Container(
+   margin: EdgeInsets.only(bottom: 12),
+   child: Text("Developed by Ali Hassan © 2022",
+ style: TextStyle(fontSize: 16)),
+ )                 
+                  ],)),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 76, 141, 95),
         title: Text("Home"),
