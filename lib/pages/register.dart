@@ -16,43 +16,45 @@ class Register extends StatelessWidget {
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(33.0),
-            child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const SizedBox(height: 64,),
-
-                MyTextField(hinttexttt: 'Enter Your Username', isPassword: false, textInputTypeee: TextInputType.text,),
-                const SizedBox(height: 33,),
+            child: SingleChildScrollView(
+              child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const SizedBox(height: 64,),
+            
+                  MyTextField(hinttexttt: 'Enter Your Username', isPassword: false, textInputTypeee: TextInputType.text,),
+                  const SizedBox(height: 33,),
+                  
+                  MyTextField(hinttexttt: 'Enter Your Email', isPassword: false, textInputTypeee: TextInputType.emailAddress,),
+                  const SizedBox(height: 33,),
+                  MyTextField(hinttexttt: 'Enter Your Password', isPassword: true, textInputTypeee: TextInputType.text,),
+                  
+                  const SizedBox(height: 33,),
                 
-                MyTextField(hinttexttt: 'Enter Your Email', isPassword: false, textInputTypeee: TextInputType.emailAddress,),
-                const SizedBox(height: 33,),
-                MyTextField(hinttexttt: 'Enter Your Password', isPassword: true, textInputTypeee: TextInputType.text,),
+                  ElevatedButton(onPressed: (){}, child: Text( ' Sing in ' , style: TextStyle(fontSize: 19) ) ,
+                  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(BTNgreen),
+                  padding: MaterialStateProperty.all(EdgeInsets.all(12)),
+                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)
+                  )),
+                  ),
+                  ),
                 
-                const SizedBox(height: 33,),
-    
-                ElevatedButton(onPressed: (){}, child: Text( ' Sing in ' , style: TextStyle(fontSize: 19) ) ,
-                style: ButtonStyle(backgroundColor: MaterialStateProperty.all(BTNgreen),
-                padding: MaterialStateProperty.all(EdgeInsets.all(12)),
-                shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8)
-                )),
-                ),
-                ),
-    
-                const SizedBox(height: 33,),
-    
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text('Do not have an account?' , style: TextStyle(fontSize: 18),),
-                    TextButton(onPressed: (){}, child: Text('sing up' , style: TextStyle(color: Colors.black , fontSize: 18))),
-                  ],
-                )
-    
-    
-    
-              ],
-        
+                  const SizedBox(height: 33,),
+                
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('Do not have an account?' , style: TextStyle(fontSize: 18),),
+                      TextButton(onPressed: (){}, child: Text('sing up' , style: TextStyle(color: Colors.black , fontSize: 18))),
+                    ],
+                  )
+                
+                
+                
+                ],
+                    
+              ),
             ),
           ),
         ),
