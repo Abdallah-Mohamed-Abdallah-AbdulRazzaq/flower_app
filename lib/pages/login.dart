@@ -33,9 +33,11 @@ class Login extends StatelessWidget {
               ),
               ),
 
+              const SizedBox(height: 33,),
+
               Row(
                 children: [
-                  Text('Do not have an account' , style: TextStyle(fontSize: 18),),
+                  Text('Do not have an account?' , style: TextStyle(fontSize: 18),),
                   TextButton(onPressed: (){}, child: Text('sing up' , style: TextStyle(color: Colors.black , fontSize: 18))),
                 ],
               )
