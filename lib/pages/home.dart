@@ -10,6 +10,7 @@ class Home extends StatelessWidget {
           child: Column(
         children: [
           UserAccountsDrawerHeader(
+            decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/img/pk.jpg"),fit: BoxFit.cover),),
             currentAccountPicture: CircleAvatar(
               radius: 55,
               backgroundImage: AssetImage("assets/img/my.jpg"),
