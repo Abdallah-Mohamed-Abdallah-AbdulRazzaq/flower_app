@@ -7,18 +7,19 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-          child:  Column(
+          child: Column(
         children: [
           UserAccountsDrawerHeader(
+            currentAccountPicture: CircleAvatar(
+              radius: 55,
+              backgroundImage: AssetImage("assets\img\pk.jpg"),
+            ),
             accountEmail: Text("Abdallah@yahoo.com"),
-            accountName: Text("Abdallah Mohamed",
-                style: TextStyle(
-                  color: Color.fromARGB(255, 255, 255, 255),
-                )),
+            accountName: Text("Abdallah Mohamed",style: TextStyle(
+                  color: Color.fromARGB(255, 255, 255, 255),)),
           ),
         ],
       )),
-      
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 76, 141, 95),
         title: Text("Home"),
