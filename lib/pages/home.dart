@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
           child:  Column(
         children: [
           UserAccountsDrawerHeader(
-
+            accountEmail: Text("Abdallah@yahoo.com"),
             accountName: Text("Abdallah Mohamed",
                 style: TextStyle(
                   color: Color.fromARGB(255, 255, 255, 255),
