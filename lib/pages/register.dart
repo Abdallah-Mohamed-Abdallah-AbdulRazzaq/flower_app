@@ -21,9 +21,9 @@ class Register extends StatelessWidget {
               children: [
                 const SizedBox(height: 64,),
 
-                MyTextField(hinttexttt: 'Enter Your Email', isPassword: false, textInputTypeee: TextInputType.emailAddress,),
+                MyTextField(hinttexttt: 'Enter Your Username', isPassword: false, textInputTypeee: TextInputType.text,),
                 const SizedBox(height: 33,),
-
+                
                 MyTextField(hinttexttt: 'Enter Your Email', isPassword: false, textInputTypeee: TextInputType.emailAddress,),
                 const SizedBox(height: 33,),
                 MyTextField(hinttexttt: 'Enter Your Password', isPassword: true, textInputTypeee: TextInputType.text,),
