@@ -21,6 +21,8 @@ class Login extends StatelessWidget {
               MyTextField(hinttexttt: 'Enter Your Email', isPassword: false, textInputTypeee: TextInputType.emailAddress,),
               const SizedBox(height: 33,),
               MyTextField(hinttexttt: 'Enter Your Password', isPassword: true, textInputTypeee: TextInputType.text,),
+              
+              const SizedBox(height: 33,),
 
               ElevatedButton(onPressed: (){}, child: Text( ' Sing in ' , style: TextStyle(fontSize: 19) ) ,
               style: ButtonStyle(backgroundColor: MaterialStateProperty.all(BTNgreen),
@@ -28,12 +30,10 @@ class Login extends StatelessWidget {
               shape: MaterialStateProperty.all(RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8)
               )),
-
-              
               ),
               ),
             ],
-              
+      
           ),
         ),
       ),
