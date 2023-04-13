@@ -28,10 +28,7 @@ class Login extends StatelessWidget {
                 
                 const SizedBox(height: 33,),
     
-                ElevatedButton(onPressed: (){
-                 Navigator.pushReplacement(context,
-                 MaterialPageRoute(builder: (context) => const Register()),);                  
-                },
+                ElevatedButton(onPressed: (){},
                 child: Text( ' Sing in ' , style: TextStyle(fontSize: 19) ) ,
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all(BTNgreen),
                 padding: MaterialStateProperty.all(EdgeInsets.all(12)),
@@ -47,7 +44,11 @@ class Login extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text('Do not have an account?' , style: TextStyle(fontSize: 18),),
-                    TextButton(onPressed: (){}, child: Text('sing up' , style: TextStyle(color: Colors.black , fontSize: 18))),
+                    TextButton(onPressed: (){
+                      Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => const Register()),);                       
+                    },
+                    child: Text('sing up' , style: TextStyle(color: Colors.black , fontSize: 18))),
                   ],
                 )
     
