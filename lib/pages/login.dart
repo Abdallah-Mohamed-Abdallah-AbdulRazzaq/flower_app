@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../shared/colors.dart';
 import '../shared/custom_textfield.dart';
 
 class Login extends StatelessWidget {
@@ -23,7 +24,7 @@ class Login extends StatelessWidget {
               style: ButtonStyle(backgroundColor: MaterialStateProperty.all(BTNgreen),
               
               ),
-
+              ),
             ],
               
           ),
