@@ -46,12 +46,16 @@ class Register extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text('Do not have an account?' , style: TextStyle(fontSize: 18),),
-                      TextButton(onPressed: (){}, child: Text('sing in' , style: TextStyle(color: Colors.black , fontSize: 18))),
+                      TextButton(onPressed: (){
+                        Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const SecondRoute()),);
+                      },
+                      child: Text('sing in' , style: TextStyle(color: Colors.black , fontSize: 18))),
                     ],
                   )
-                
-                
-                
+
+
+                  
                 ],
                     
               ),
