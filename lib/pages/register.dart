@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import '../shared/colors.dart';
 import '../shared/custom_textfield.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class Register extends StatelessWidget {
+  const Register({super.key});
 
   @override
   Widget build(BuildContext context) {
