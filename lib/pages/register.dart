@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:flower_app/pages/login.dart';
 import 'package:flutter/material.dart';
 
 import '../shared/colors.dart';
@@ -47,15 +48,15 @@ class Register extends StatelessWidget {
                     children: [
                       Text('Do not have an account?' , style: TextStyle(fontSize: 18),),
                       TextButton(onPressed: (){
-                        Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const SecondRoute()),);
+                        Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => const Login()),);
                       },
                       child: Text('sing in' , style: TextStyle(color: Colors.black , fontSize: 18))),
                     ],
                   )
 
 
-                  
+
                 ],
                     
               ),
