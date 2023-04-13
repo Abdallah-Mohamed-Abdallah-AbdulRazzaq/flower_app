@@ -24,11 +24,10 @@ class Home extends StatelessWidget {
                   color: Color.fromARGB(255, 255, 255, 255),
                 )),
           ),
-          
           ListTile(
               title: Text("Home"), leading: Icon(Icons.home), onTap: () {}),
-
-              
+          ListTile(
+              title: Text("My products"),leading: Icon(Icons.add_shopping_cart),onTap: () {}),
         ],
       )),
       appBar: AppBar(
