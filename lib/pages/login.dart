@@ -19,7 +19,10 @@ class Login extends StatelessWidget {
               const SizedBox(height: 33,),
               MyTextField(hinttexttt: 'Enter Your Password', isPassword: true, textInputTypeee: TextInputType.text,),
 
-              ElevatedButton(onPressed: (){}, child: Text( '  ' , style: TextStyle(fontSize: 19) , )),
+              ElevatedButton(onPressed: (){}, child: Text( ' Sing in ' , style: TextStyle(fontSize: 19) ) ,
+              style: ButtonStyle(),
+              
+              ),
 
             ],
               
