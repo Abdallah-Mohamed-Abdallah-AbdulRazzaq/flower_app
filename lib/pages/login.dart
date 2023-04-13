@@ -15,9 +15,9 @@ class Login extends StatelessWidget {
             children: [
               const SizedBox(height: 64,),
               
-              MyTextField(hinttexttt: '', isPassword: null, textInputTypeee: null,),
+              MyTextField(hinttexttt: 'Enter Your Email', isPassword: false, textInputTypeee: TextInputType.emailAddress,),
               const SizedBox(height: 33,),
-              MyTextField(hinttexttt: '', isPassword: null, textInputTypeee: null,),
+              MyTextField(hinttexttt: 'Enter Your Password', isPassword: true, textInputTypeee: TextInputType.text,),
 
 
             ],
